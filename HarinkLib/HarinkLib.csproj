@@ -6,10 +6,10 @@
     <Nullable>enable</Nullable>
     <Title>HarinkLib</Title>
     <Authors>Rik Harink</Authors>
-    <Description>utility library</Description>
+    <Description>A personal utility library</Description>
     <PackageProjectUrl>https://github.com/rikharink/HarinkLib/</PackageProjectUrl>
     <PackageLicense>MIT</PackageLicense>
-    <RepositoryUrl>https://github.com/rikharink/HarinkLib/</RepositoryUrl>
+    <RepositoryUrl>https://github.com/rikharink/HarinkLib.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
