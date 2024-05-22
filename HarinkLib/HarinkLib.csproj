@@ -11,6 +11,7 @@
     <PackageLicense>MIT</PackageLicense>
     <RepositoryUrl>https://github.com/rikharink/HarinkLib.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
 </Project>
