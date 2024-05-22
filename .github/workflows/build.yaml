@@ -19,11 +19,9 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '8.x'
       - name: Restore dependencies
         run: dotnet restore
-      - name: Copy readme
-        run: cp README.md ./HarinkLib/README.md
       - name: Build solution
         run: dotnet build --configuration Release -p:Version=$(date +'%Y.%m.%d')-$(echo $GITHUB_SHA | cut -c1-7)
       - name: Run tests

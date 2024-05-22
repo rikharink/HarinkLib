@@ -11,14 +11,6 @@
     <PackageLicense>MIT</PackageLicense>
     <RepositoryUrl>https://github.com/rikharink/HarinkLib.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
-
-  <!-- include README.md and copy always-->
-  <ItemGroup>
-    <Content Include="README.md">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
 
 </Project>

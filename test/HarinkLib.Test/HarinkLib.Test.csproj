@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HarinkLib\HarinkLib.csproj" />
+    <ProjectReference Include="..\..\src\HarinkLib\HarinkLib.csproj" />
   </ItemGroup>
 
 </Project>
