@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarinkLib", "HarinkLib\HarinkLib.csproj", "{D52E1F38-69DC-4B2E-AF73-79080790C908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarinkLib.Test", "HarinkLib.Test\HarinkLib.Test.csproj", "{CDF05598-D409-4BA9-9E05-A4D1F9D855CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarinkLib.Benchmarks", "HarinkLib.Benchmarks\HarinkLib.Benchmarks.csproj", "{C8B4B24F-0E08-4966-AAA8-97081ADBFB26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D52E1F38-69DC-4B2E-AF73-79080790C908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52E1F38-69DC-4B2E-AF73-79080790C908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52E1F38-69DC-4B2E-AF73-79080790C908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52E1F38-69DC-4B2E-AF73-79080790C908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF05598-D409-4BA9-9E05-A4D1F9D855CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF05598-D409-4BA9-9E05-A4D1F9D855CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF05598-D409-4BA9-9E05-A4D1F9D855CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF05598-D409-4BA9-9E05-A4D1F9D855CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B4B24F-0E08-4966-AAA8-97081ADBFB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B4B24F-0E08-4966-AAA8-97081ADBFB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B4B24F-0E08-4966-AAA8-97081ADBFB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B4B24F-0E08-4966-AAA8-97081ADBFB26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

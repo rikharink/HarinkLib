@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarinkLib", "HarinkLib.csproj", "{B0B70BAF-9584-4265-95C7-8A3FE0ACFFAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0B70BAF-9584-4265-95C7-8A3FE0ACFFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B70BAF-9584-4265-95C7-8A3FE0ACFFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B70BAF-9584-4265-95C7-8A3FE0ACFFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B70BAF-9584-4265-95C7-8A3FE0ACFFAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F15881E-689B-40BD-B9B2-1CD8F5C5BBEA}
+	EndGlobalSection
+EndGlobal
