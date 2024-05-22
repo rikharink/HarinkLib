@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "ms-dotnettools.csdevkit"
+        "ms-dotnettools.csdevkit",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "github.vscode-github-actions"
     ]
 }
