@@ -21,7 +21,7 @@ jobs:
       - name: Run tests
         run: dotnet test --no-build --configuration Release --verbosity normal
       - name: Pack NuGet package
-        run: dotnet pack --no-build --configuration Release
+        run: dotnet pack --no-build --configuration Release --output ./artifacts -p:Version=$(date +'%Y.%m.%d')-$(echo $GITHUB_SHA | cut -c1-7)
       - name: Publish to GitHub Package Registry
         run: |
           dotnet nuget add source --username rikharink --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/rikharink/index.json"
