@@ -16,7 +16,7 @@ public class CircularBufferTest
         var buffer = new CircularBuffer<int>(1);
         buffer.Write(new ReadOnlySpan<int>([1]));
         buffer.Write(new ReadOnlySpan<int>([2]));
-        var readData = buffer.Read().ToArray();
+        var readData = buffer.Read();
         Assert.Equal([2], readData);
     }
 
@@ -44,7 +44,7 @@ public class CircularBufferTest
         var span = new Span<int>(new int[5]);
         var result = buffer.Read(ref span);
         Assert.True(result);
-        Assert.Equal([1, 2, 3, 4, 5], span.ToArray());
+        Assert.Equal([1, 2, 3, 4, 5], span);
     }
 
     [Fact]
@@ -71,8 +71,8 @@ public class CircularBufferTest
         var data = new ReadOnlySpan<int>([1, 2, 3, 4, 5]);
         buffer.Write(data);
 
-        var readData = buffer.Read().ToArray();
-        Assert.Equal(data.ToArray(), readData);
+        var readData = buffer.Read();
+        Assert.Equal(data, readData);
     }
 
     [Fact]
@@ -85,19 +85,19 @@ public class CircularBufferTest
         var data4 = new ReadOnlySpan<int>([10, 11, 12]);
 
         buffer.Write(data1);
-        var readData1 = buffer.Read().ToArray();
-        Assert.Equal(data1.ToArray(), readData1);
+        var readData1 = buffer.Read();
+        Assert.Equal(data1, readData1);
 
         buffer.Write(data2);
-        var readData2 = buffer.Read().ToArray();
-        Assert.Equal(data2.ToArray(), readData2);
+        var readData2 = buffer.Read();
+        Assert.Equal(data2, readData2);
 
         buffer.Write(data3);
-        var readData3 = buffer.Read().ToArray();
-        Assert.Equal(data3.ToArray(), readData3);
+        var readData3 = buffer.Read();
+        Assert.Equal(data3, readData3);
 
         buffer.Write(data4);
-        var readData4 = buffer.Read().ToArray();
-        Assert.Equal(data4.ToArray(), readData4);
+        var readData4 = buffer.Read();
+        Assert.Equal(data4, readData4);
     }
 }

@@ -12,11 +12,11 @@ public class ChunkedCircularBufferTest
         buffer.Write(data);
 
         Assert.Equal(2, buffer.ChunksAvailable);
-        var readData = buffer.ReadChunk().ToArray();
+        var readData = buffer.ReadChunk();
         Assert.Equal(1, buffer.ChunksAvailable);
-        Assert.Equal(data[..5].ToArray(), readData);
-        var readData2 = buffer.ReadChunk().ToArray();
-        Assert.Equal(data[5..].ToArray(), readData2);
+        Assert.Equal(data[..5], readData);
+        var readData2 = buffer.ReadChunk();
+        Assert.Equal(data[5..], readData2);
         Assert.Equal(0, buffer.ChunksAvailable);
     }
     
@@ -46,10 +46,10 @@ public class ChunkedCircularBufferTest
         var span = new Span<int>(new int[5]);
         var result = buffer.ReadChunk(ref span);
         Assert.True(result);
-        Assert.Equal([1, 2, 3, 4, 5], span.ToArray());
+        Assert.Equal([1, 2, 3, 4, 5], span);
         
         var result2 = buffer.ReadChunk(ref span);
         Assert.True(result2);
-        Assert.Equal([6, 7, 8, 9, 10], span.ToArray());
+        Assert.Equal([6, 7, 8, 9, 10], span);
     }
 }
